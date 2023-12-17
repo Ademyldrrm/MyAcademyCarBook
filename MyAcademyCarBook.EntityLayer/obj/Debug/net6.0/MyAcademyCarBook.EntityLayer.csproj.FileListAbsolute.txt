@@ -1,0 +1,14 @@
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\bin\Debug\net6.0\MyAcademyCarBook.EntityLayer.deps.json
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\bin\Debug\net6.0\MyAcademyCarBook.EntityLayer.runtimeconfig.json
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\bin\Debug\net6.0\MyAcademyCarBook.EntityLayer.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\bin\Debug\net6.0\MyAcademyCarBook.EntityLayer.pdb
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.AssemblyInfo.cs
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\refint\MyAcademyCarBook.EntityLayer.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.pdb
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.genruntimeconfig.cache
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\ref\MyAcademyCarBook.EntityLayer.dll
