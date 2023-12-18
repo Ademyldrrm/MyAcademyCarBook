@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+@await Html.PartialAsync("_PartialHead.cshtml","_AdminLayout")
+
+<body>
+    <div class="wrapper">
+
+        @await Html.PartialAsync("_PartialTopbar.cshtml", "_AdminLayout")
+
+        @await Html.PartialAsync("_PartialSidebar.cshtml", "_AdminLayout")
+
+        <div class="content-page">
+            <div class="content">
+
+                <div class="container-fluid">
+
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                   
+                                </div>
+                                <h4 class="page-title">
+                                    @RenderBody()
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+
+            </div> 
+            @await Html.PartialAsync("_PartialFooter.cshtml", "_AdminLayout")
+
+
+        </div>
+
+    </div>
+
+
+    <script src="~/Velonic_v6.0.0/Admin/dist/assets/js/vendor.min.js"></script>
+
+    <script src="~/Velonic_v6.0.0/Admin/dist/assets/js/app.min.js"></script>
+
+</body>
+</html>

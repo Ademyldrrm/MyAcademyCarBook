@@ -15,3 +15,4 @@ C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.BusinessLay
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.BusinessLayer\obj\Debug\net6.0\refint\MyAcademyCarBook.BusinessLayer.dll
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.BusinessLayer\obj\Debug\net6.0\MyAcademyCarBook.BusinessLayer.pdb
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.BusinessLayer\obj\Debug\net6.0\ref\MyAcademyCarBook.BusinessLayer.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.BusinessLayer\obj\Debug\net6.0\MyAcademyCarBook.BusinessLayer.sourcelink.json
