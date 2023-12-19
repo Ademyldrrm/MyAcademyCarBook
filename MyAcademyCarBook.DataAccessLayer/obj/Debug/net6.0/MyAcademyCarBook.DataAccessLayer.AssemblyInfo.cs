@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyAcademyCarBook.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1abd174efbe3d32f73fe07c52c8d477a8af6612f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f078a436606e409614cb0205306a6700dbd01e32")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyAcademyCarBook.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyAcademyCarBook.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

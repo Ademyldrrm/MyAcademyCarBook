@@ -1,12 +1,15 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using MyAcademyCarBook.BusinessLayer.Abstract;
 using MyAcademyCarBook.BusinessLayer.Concrete;
 using MyAcademyCarBook.DataAccessLayer.Abstract;
 using MyAcademyCarBook.DataAccessLayer.Concrete;
 using MyAcademyCarBook.DataAccessLayer.EntityFramework;
+using MyAcademyCarBook.EntityLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<CarBookContext>();
 builder.Services.AddDbContext<CarBookContext>();   
 builder.Services.AddScoped<IBrandDal,EfBrandDal>();
 builder.Services.AddScoped<IBrandService,BrandManager>();
