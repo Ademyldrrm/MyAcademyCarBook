@@ -55,7 +55,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.Property<int>("CarCategoryID")
                         .HasColumnType("int");
 
-                    b.Property<int>("CarStatusID1")
+                    b.Property<int>("CarStatusID")
                         .HasColumnType("int");
 
                     b.Property<string>("GearType")
@@ -88,7 +88,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
 
                     b.HasIndex("CarCategoryID");
 
-                    b.HasIndex("CarStatusID1");
+                    b.HasIndex("CarStatusID");
 
                     b.ToTable("Cars");
                 });
@@ -169,8 +169,8 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("PriceValue")
-                        .HasColumnType("bit");
+                    b.Property<decimal>("PriceValue")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("PriceID");
 
@@ -193,9 +193,9 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.CarStatus", "CarStatusID")
+                    b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.CarStatus", "CarStatus")
                         .WithMany("Cars")
-                        .HasForeignKey("CarStatusID1")
+                        .HasForeignKey("CarStatusID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -203,7 +203,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
 
                     b.Navigation("CarCategory");
 
-                    b.Navigation("CarStatusID");
+                    b.Navigation("CarStatus");
                 });
 
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Price", b =>

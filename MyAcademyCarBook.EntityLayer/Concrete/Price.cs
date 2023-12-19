@@ -12,6 +12,6 @@ namespace MyAcademyCarBook.EntityLayer.Concrete
         public int CarID { get; set; }
         public Car Car { get; set; }
         public string PriceType { get; set; }
-        public bool PriceValue { get; set; }
+        public decimal PriceValue { get; set; }
     }
 }
