@@ -12,3 +12,4 @@ C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.pdb
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.genruntimeconfig.cache
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\ref\MyAcademyCarBook.EntityLayer.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.EntityLayer\obj\Debug\net6.0\MyAcademyCarBook.EntityLayer.sourcelink.json

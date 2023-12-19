@@ -55,7 +55,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.Property<int>("CarCategoryID")
                         .HasColumnType("int");
 
-                    b.Property<int>("CarStatusID")
+                    b.Property<int>("CarStatusID1")
                         .HasColumnType("int");
 
                     b.Property<string>("GearType")
@@ -88,7 +88,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
 
                     b.HasIndex("CarCategoryID");
 
-                    b.HasIndex("CarStatusID");
+                    b.HasIndex("CarStatusID1");
 
                     b.ToTable("Cars");
                 });
@@ -193,9 +193,9 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.CarStatus", "CarStatus")
+                    b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.CarStatus", "CarStatusID")
                         .WithMany("Cars")
-                        .HasForeignKey("CarStatusID")
+                        .HasForeignKey("CarStatusID1")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -203,7 +203,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
 
                     b.Navigation("CarCategory");
 
-                    b.Navigation("CarStatus");
+                    b.Navigation("CarStatusID");
                 });
 
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Price", b =>

@@ -1,0 +1,42 @@
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Car>
+@{
+    ViewData["Title"] = "CarListWithBrands";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Araba Listeleme Maraklaar Sayfası</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Model</th>
+        <th>Kategori</th>
+        <th>Marka</th>
+        <th>Vites Türü</th>
+        <th>yıl</th>
+        <th>Araba Durumu</th>
+        <th>Detaylar</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Sitede Gör</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CarID</td>
+            <td>@item.Model</td>          
+            <td>@item.CarCategory.CategoryName</td>
+            <td>@item.Brand.BrandName</td>
+            <td>@item.GearType</td>
+            <td>@item.Year</td>
+            <td>@item.CarStatus.CarStatusName</td>
+            <td><a href="#" class="btn btn-outline-warning">Detaylar</a></td>
+            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="#" class="btn btn-outline-info">Sitede Gör</a></td>
+        </tr>
+    }
+</table>
+<a href="#" class="btn btn-outline-primary">Yeni Araç Girişi</a>
+
+
