@@ -348,6 +348,23 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("CarStatuses");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.HowitWorkStep", b =>
+                {
+                    b.Property<int>("HowitWorkStepID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HowitWorkStepID"), 1L, 1);
+
+                    b.Property<string>("HowitWorkStepTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("HowitWorkStepID");
+
+                    b.ToTable("HowitWorkSteps");
+                });
+
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Location", b =>
                 {
                     b.Property<int>("LocationID")
@@ -391,6 +408,31 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.HasIndex("CarID");
 
                     b.ToTable("Prices");
+                });
+
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Service", b =>
+                {
+                    b.Property<int>("ServiceID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ServiceID"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ServiceTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ServiceID");
+
+                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
