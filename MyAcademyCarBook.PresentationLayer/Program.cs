@@ -27,6 +27,12 @@ builder.Services.AddScoped<IPriceService, PriceManager>();
 builder.Services.AddScoped<IServiceDal, EfServiceDal>();
 builder.Services.AddScoped<IServiceService, SerciveManager>();
 
+builder.Services.AddScoped<ICarCategoryDal, EfCarCategoryDal>();
+builder.Services.AddScoped<ICarCategoryService, CarCategoryManager>();
+
+builder.Services.AddScoped<ICarDetailDal, EfCarDetailDal>();
+builder.Services.AddScoped<ICarDetailService, CarDetailManager>();
+
 builder.Services.AddScoped<IHowitWorkStepDal, EfHowitWorkStep>();
 builder.Services.AddScoped<IHowitWorkStepService, HowitWorkStepManager>();
 

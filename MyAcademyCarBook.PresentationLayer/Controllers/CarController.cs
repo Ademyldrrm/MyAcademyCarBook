@@ -6,10 +6,12 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
     public class CarController : Controller
     {
         private readonly ICarService _carService;
+        private readonly ICarDetailService _carDetailService;
 
-        public CarController(ICarService carService)
+        public CarController(ICarService carService, ICarDetailService carDetailService)
         {
             _carService = carService;
+            _carDetailService = carDetailService;
         }
 
         public IActionResult Index()
@@ -24,8 +26,18 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
         }
         public IActionResult CarList()
         {
+            ViewBag.title1 = "Araba Listesi";
+            ViewBag.title2 = "Sizin İçin Araç Listesi";
             var result = _carService.TGetAllCarsWithBrands();
             return View(result);
+        }
+        public IActionResult CarDetail(int id)
+        {
+            ViewBag.title1 = "Araba Detayları";
+            ViewBag.title2 = " Son Araba Detayları";
+            var values=_carDetailService.TGetCarDetailByID(id);
+            ViewBag.v=values.Description;
+            return View(values);
         }
     }
 }
