@@ -378,6 +378,43 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("CarStatuses");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Comment", b =>
+                {
+                    b.Property<int>("CommentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentID"), 1L, 1);
+
+                    b.Property<int>("CarID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("CommentID");
+
+                    b.HasIndex("CarID");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.HowitWorkStep", b =>
                 {
                     b.Property<int>("HowitWorkStepID")
@@ -562,6 +599,17 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.Navigation("Car");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Comment", b =>
+                {
+                    b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.Car", "Car")
+                        .WithMany("Comments")
+                        .HasForeignKey("CarID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+                });
+
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Price", b =>
                 {
                     b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.Car", "Car")
@@ -586,6 +634,8 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Car", b =>
                 {
                     b.Navigation("CarDetails");
+
+                    b.Navigation("Comments");
 
                     b.Navigation("Prices");
                 });

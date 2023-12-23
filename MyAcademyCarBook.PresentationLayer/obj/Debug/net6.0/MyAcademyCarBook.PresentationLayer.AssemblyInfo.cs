@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyAcademyCarBook.PresentationLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39081ea347ad16b7a4c08a84c372b9ac57d4e9e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d8a791c04b76c83850632914ed42c0f8b0d203cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyAcademyCarBook.PresentationLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyAcademyCarBook.PresentationLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

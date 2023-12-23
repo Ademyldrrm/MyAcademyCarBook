@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+CCymQt42E5UsYkMfVZmb9ucA3WoVj6uV0k0kM6E5EosGrE4x+TqRXroOwSCcEe+n8vZ9T5lpntmBDl15nY8Sw==",
+  "dgSpecHash": "HokLsi3MYc1VWQrAB+fOGRkc//iiZKz+YLouHIhZivP8AfroyxXV3s0aG6AVZMSIUD0pi4NARDukKCquNAfLMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\AdemYildirim\\source\\repos\\MyAcademyCarBook\\MyAcademyCarBook.PresentationLayer\\MyAcademyCarBook.PresentationLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

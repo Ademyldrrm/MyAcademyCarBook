@@ -36,6 +36,9 @@ builder.Services.AddScoped<ICarDetailService, CarDetailManager>();
 builder.Services.AddScoped<IHowitWorkStepDal, EfHowitWorkStep>();
 builder.Services.AddScoped<IHowitWorkStepService, HowitWorkStepManager>();
 
+builder.Services.AddScoped<ICommentDal, EfCommentDal>();
+builder.Services.AddScoped<ICommentService, CommentManager>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
