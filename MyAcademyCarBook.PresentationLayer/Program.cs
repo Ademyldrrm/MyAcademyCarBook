@@ -39,6 +39,9 @@ builder.Services.AddScoped<IHowitWorkStepService, HowitWorkStepManager>();
 builder.Services.AddScoped<ICommentDal, EfCommentDal>();
 builder.Services.AddScoped<ICommentService, CommentManager>();
 
+builder.Services.AddScoped<IContactDal, EfContactDal>();
+builder.Services.AddScoped<IContactService, ContactManager>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

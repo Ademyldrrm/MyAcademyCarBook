@@ -42,5 +42,17 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             _brandService.TUpdate(brand);
             return RedirectToAction("Index");
         }
+       
+        public IActionResult GetBrandSearchByName(string name)
+        {
+            ViewData["CurrentFilter"] = name;
+            var values=from x in _brandService.TGetListAll() select x;
+            if(!string.IsNullOrEmpty(name))
+            {
+                values = values.Where(y => y.BrandName.Contains(name));
+            }
+           return View(values.ToList());
+        }
+
     }
 }
