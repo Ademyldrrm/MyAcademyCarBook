@@ -1,0 +1,39 @@
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Testimonial>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Referans Listeleme Sayfası</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Referans Ad</th>
+        <th>Referans Soyad</th>
+        <th>Referans Yorum</th>
+        <th>Referans Resim</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestimonialID</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.Description</td>
+            <td>@item.ImageUrl</td>
+            <td><a href="/AdminTestimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/AdminTestimonial/UpdateTestimonial/@item.TestimonialID" class="btn btn-outline-success">Güncelle</a></td>
+
+        </tr>
+      
+    }
+   
+</table>
+<a href="/AdminTestimonial/CreateTestimonial" class="btn btn-outline-primary">Yeni Marka Girişi</a>
+
+

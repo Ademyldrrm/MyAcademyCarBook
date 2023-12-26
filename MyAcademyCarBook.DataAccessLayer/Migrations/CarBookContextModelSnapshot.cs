@@ -531,6 +531,35 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Testimonial", b =>
+                {
+                    b.Property<int>("TestimonialID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestimonialID"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TestimonialID");
+
+                    b.ToTable("Testimonials");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
                 {
                     b.HasOne("MyAcademyCarBook.EntityLayer.Concrete.AppRole", null)

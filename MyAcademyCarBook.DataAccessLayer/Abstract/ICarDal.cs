@@ -10,5 +10,6 @@ namespace MyAcademyCarBook.DataAccessLayer.Abstract
     public interface ICarDal:IGenericDal<Car>
     {
         List<Car> GetAllCarsWithBrands();
+        List<Car> GetAllLast5Cars();
     }
 }

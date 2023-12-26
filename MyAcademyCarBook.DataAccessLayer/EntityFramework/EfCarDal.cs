@@ -16,7 +16,14 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
         public List<Car> GetAllCarsWithBrands()
         {
             var context = new CarBookContext();
-            var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x=>x.CarStatus).ToList();
+            var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).ToList();
+            return values;
+        }
+
+        public List<Car> GetAllLast5Cars()
+        {
+            var context = new CarBookContext();
+            var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).Take(5).ToList(); 
             return values;
         }
     }

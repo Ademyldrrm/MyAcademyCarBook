@@ -28,6 +28,11 @@ namespace MyAcademyCarBook.BusinessLayer.Concrete
             return _carDal.GetAllCarsWithBrands();
         }
 
+        public List<Car> TGetAllLast5Cars()
+        {
+            return _carDal.GetAllLast5Cars();
+        }
+
         public Car TGetById(int id)
         {
             if (id != null)

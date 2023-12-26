@@ -42,6 +42,9 @@ builder.Services.AddScoped<ICommentService, CommentManager>();
 builder.Services.AddScoped<IContactDal, EfContactDal>();
 builder.Services.AddScoped<IContactService, ContactManager>();
 
+builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
+builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

@@ -1,8 +1,34 @@
-﻿
+﻿@model List<MyAcademyCarBook.EntityLayer.Concrete.Contact>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/_AdminLayout/Index.cshtml";
 }
 
-<h1>İletişim</h1>
+<h1>İletişim Listeleme Sayfası</h1>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen Ad</th>
+        <th>Gönderen Soyad</th>
+        <th>Gönderen Mail</th>
+        <th>Yorum</th>
+        <th>Sil</th>
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.FirstName</td>
+            <td>@item.LastName</td>
+            <td>@item.EMail</td>
+            <td>@item.Comment</td>
+            <td><a href="/Contact/DeleteContact/@item.ContactID" class="btn btn-outline-danger">Sil</a></td>
+
+        </tr>
+    }
+</table>
+
+
 
