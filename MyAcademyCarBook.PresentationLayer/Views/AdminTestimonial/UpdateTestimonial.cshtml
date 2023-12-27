@@ -1,0 +1,25 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Testimonial
+@{
+    ViewData["Title"] = "UpdateTestimonial";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Referans Güncelleme Sayfası</h1>
+<form method="post">
+    <input type="hidden" asp-for="TestimonialID" />
+    <label>Referans  Adı</label>
+    <br />
+    <input type="text" asp-for="Name" class="form-control" style="border:1px solid #2222" />
+    <label>Referans  Soyadı</label>
+    <br />
+    <input type="text" asp-for="Surname" class="form-control" style="border:1px solid #2222" />
+    <label>Referans  Açıklama</label>
+    <br />
+    <input type="text" asp-for="Description" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <label>Referans  Başlık</label>
+    <br />
+    <input type="text" asp-for="ImageUrl" class="form-control" style="border:1px solid #2222" />
+
+    <button class="btn btn-primary">Referans Gncelle</button>
+</form>

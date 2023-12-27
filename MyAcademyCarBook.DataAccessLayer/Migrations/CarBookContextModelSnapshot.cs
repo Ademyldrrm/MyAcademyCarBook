@@ -531,6 +531,35 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("Services");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Team", b =>
+                {
+                    b.Property<int>("TeamID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TeamID"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeamNameSurname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TeamTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TeamID");
+
+                    b.ToTable("Teams");
+                });
+
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.Testimonial", b =>
                 {
                     b.Property<int>("TestimonialID")

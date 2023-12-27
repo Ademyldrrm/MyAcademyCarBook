@@ -13,6 +13,8 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
 {
     public class EfCarDal : GenericRepository<Car>, ICarDal
     {
+       
+
         public List<Car> GetAllCarsWithBrands()
         {
             var context = new CarBookContext();
@@ -26,5 +28,6 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
             var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).Take(5).ToList(); 
             return values;
         }
+        
     }
 }

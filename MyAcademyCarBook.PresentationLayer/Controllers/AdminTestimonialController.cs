@@ -35,5 +35,17 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             _testimonialService.TDelete(values);
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public IActionResult UpdateTestimonial(int id)
+        {
+            var values = _testimonialService.TGetById(id);
+            return View(values);
+        }
+        [HttpPost]
+        public IActionResult UpdateTestimonial(Testimonial testimonial)
+        {
+            _testimonialService.TUpdate(testimonial);
+            return RedirectToAction("Index");
+        }
     }
 }

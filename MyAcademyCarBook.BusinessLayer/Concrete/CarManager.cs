@@ -49,10 +49,7 @@ namespace MyAcademyCarBook.BusinessLayer.Concrete
 
         public void TInsert(Car entity)
         {
-            if (entity.Year >= 2010 && entity.Prices.Count > 0 && entity.Km <= 500000)
-            {
-                _carDal.Insert(entity);
-            }
+            _carDal.Insert(entity);
         }
 
         public void TUpdate(Car entity)

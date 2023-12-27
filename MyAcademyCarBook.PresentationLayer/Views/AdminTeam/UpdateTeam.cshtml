@@ -1,0 +1,24 @@
+﻿@model  MyAcademyCarBook.EntityLayer.Concrete.Team
+@{
+    ViewData["Title"] = "UpdateTeam";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Takım Arkadaşı Güncellem Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="TeamID"/>
+    <label>Çalışan Adı Soyadı</label>
+    <input type="text" asp-for="TeamNameSurname" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <label>Çalışan Ünvanı</label>
+    <input type="text" asp-for="TeamTitle" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <label>Çalışan Açıklama</label>
+    <input type="text" asp-for="Description" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <label>Çalışan Resim</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" style="border:1px solid #2222" />
+    <br />
+    <button class="btn btn-primary">Çalışanı Güncelle </button>
+</form>

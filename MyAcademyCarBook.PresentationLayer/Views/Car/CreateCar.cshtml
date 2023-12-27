@@ -1,0 +1,38 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Car
+@{
+    ViewData["Title"] = "CreateCar";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Aranba Ekleme sayfası</h1>
+
+<form method="post">
+    <label>Arab Categori</label>
+    @Html.DropDownListFor(x => x.CarCategoryID, (IEnumerable<SelectListItem>)ViewBag.c, new { @class = "form-control", style = "border: 2px solid grey;" })
+    <br /> 
+    <lable>Arab Marka</lable>
+    @Html.DropDownListFor(x => x.BrandID, (IEnumerable<SelectListItem>)ViewBag.b, new { @class = "form-control", style = "border: 2px solid grey;" })
+    <br />
+    <label>Arab Durum</label>
+    @Html.DropDownListFor(x => x.CarStatusID, (IEnumerable<SelectListItem>)ViewBag.cs, new { @class = "form-control", style = "border: 2px solid grey;" })
+    <br />
+    <label>Vites Tipi</label>
+    <input type="text" asp-for="GearType" class="form-control" />
+    <br />
+    <label>Araç Resim</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+    <label>Araç Km</label>
+    <input type="text" asp-for="Km" class="form-control" />
+    <br />
+    <label>Araç Yıl</label>
+    <input type="text" asp-for="Year" class="form-control" />
+    <br />
+    <label>Araç Durum</label>
+    <input type="text" asp-for="Status" class="form-control" />
+    <br />
+    <label>Araç Kişi Sayısı</label>
+    <input type="text" asp-for="PersonCount" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Araç ekle</button>
+</form>
