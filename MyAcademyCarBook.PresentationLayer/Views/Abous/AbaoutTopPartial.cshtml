@@ -1,14 +1,19 @@
-﻿<div class="site-section">
+﻿@* @model List<MyAcademyCarBook.EntityLayer.Concrete.About>
+
+<div class="site-section">
     <div class="container">
-        <div class="row">
+        @foreach (var item in Model)
+        {
+             <div class="row">
             <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2">
-                <img src="~/carrent-master/images/hero_2.jpg" alt="Image" class="img-fluid">
+                <img src="@item.Image1" alt="Image" class="img-fluid">
             </div>
             <div class="col-lg-4 mr-auto">
-                <h2>Araba Kampnyalarımız</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit suscipit, repudiandae similique accusantium eius nulla quam laudantium sequi.</p>
-                <p>Debitis voluptates corporis saepe molestias tenetur ab quae, quo earum commodi, laborum dolore, fuga aliquid delectus cum ipsa?</p>
+                <h2>@item.Title1</h2>
+                <p>@item.Description1</p>
             </div>
         </div>
+        }
+       
     </div>
-</div>
+</div> *@

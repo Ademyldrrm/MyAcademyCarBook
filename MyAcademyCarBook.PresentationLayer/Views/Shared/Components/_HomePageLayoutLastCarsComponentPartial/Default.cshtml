@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-3">
                 <h3>Son 5 Aracımız</h3>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure nesciunt nemo vel earum maxime neque!</p>
+                <p class="mb-4">En Yeni 5 Aracımız Sizlere Sunmaktan Mutluluk Duyuyoruz </p>
                 <p>
                     <a href="#" class="btn btn-primary custom-prev">Previous</a>
                     <span class="mx-2">/</span>
@@ -18,7 +18,7 @@
                     @foreach (var item in Model)
                     {
                           <div class="item-1">
-                        <a href="#"><img src="@item.ImageUrl" alt="Image" class="img-fluid"></a>
+                            <a href="#"><img src="@item.ImageUrl" alt="Image" class="img-fluid" style="height:210px; width:350px;"></a>
                         <div class="item-1-contents">
                             <div class="text-center">
                                 <h3><a href="#">@item.Brand.BrandName @item.Model</a></h3>
@@ -29,7 +29,13 @@
                                     <span class="icon-star text-warning"></span>
                                     <span class="icon-star text-warning"></span>
                                 </div>
-                                <div class="rent-price"><span>@item.Prices</span>day</div>
+                                <div class="rent-price">
+                                        @foreach (var price in item.Prices)
+                                        {
+                                            <span>@price.PriceType:</span>
+                                            <span class="spec">@price.PriceValue₺ </span>
+                                        }
+                                    </div>
                             </div>
                             <ul class="specs">
                                 <li>
@@ -50,16 +56,11 @@
                                 </li>
                             </ul>
                             <div class="d-flex action">
-                                <a href="contact.html" class="btn btn-primary">Hemen Kirala</a>
+                                <a href="/Car/CarList" class="btn btn-primary">Hemen Kirala</a>
                             </div>
                         </div>
                     </div>
                     }
-
-                  
-
-
-
 
                 </div>
 

@@ -25,9 +25,15 @@ namespace MyAcademyCarBook.DataAccessLayer.EntityFramework
         public List<Car> GetAllLast5Cars()
         {
             var context = new CarBookContext();
-            var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).Take(5).ToList(); 
+            var values = context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).Include(x => x.Prices).Take(5).ToList(); 
             return values;
         }
-        
+
+        public List<Car> GetAllPricebranCarCategory()
+        {
+            var context=new CarBookContext();
+            var values= context.Cars.Include(x => x.Brand).Include(x => x.CarCategory).Include(x => x.CarStatus).Include(x=>x.Prices).ToList();
+            return values;
+        }
     }
 }

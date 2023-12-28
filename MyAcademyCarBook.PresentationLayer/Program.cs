@@ -48,6 +48,9 @@ builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
 builder.Services.AddScoped<ITeamDal, EfTeamDal>();
 builder.Services.AddScoped<ITeamService, ITeamManager>();
 
+builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+builder.Services.AddScoped<IAboutService, IAboutManager>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

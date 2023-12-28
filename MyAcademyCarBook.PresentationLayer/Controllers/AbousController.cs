@@ -7,10 +7,12 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
     public class AbousController : Controller
     {
         private readonly ITeamService _teamService;
+        private readonly IAboutService _aboutService;
 
-        public AbousController(ITeamService teamService)
+        public AbousController(ITeamService teamService, IAboutService aboutService)
         {
             _teamService = teamService;
+            _aboutService = aboutService;
         }
 
         public IActionResult Index()
@@ -20,13 +22,7 @@ namespace MyAcademyCarBook.PresentationLayer.Controllers
             ViewBag.title2 = "Hakkımızda Merak Ettiklerinizi Aşşağıdan Bulabilirsiniz";            
             return View(values);
         }
-        public PartialViewResult AbaoutTopPartial()
-        {
-            return PartialView();
-        }
-        public PartialViewResult AboutLowerPartial()
-        {
-            return PartialView();
-        }
+       
+       
     }
 }

@@ -1,0 +1,42 @@
+﻿@model MyAcademyCarBook.EntityLayer.Concrete.Car
+@{
+    ViewData["Title"] = "UpdateCar";
+    Layout = "~/Views/_AdminLayout/Index.cshtml";
+}
+
+<h1>Araba Güncelleme Sayfası</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="CarID"/>
+    <label>Araç Categori</label>
+    <select asp-items="ViewBag.c" asp-for="CarCategoryID" class="form-control"></select>
+    <br />
+    <lable>Araç Marka</lable>
+    <select asp-items="ViewBag.b" asp-for="BrandID" class="form-control"></select>
+    <br />
+    <lable>Araç Model</lable>
+    <input type="text" asp-for="Model" class="form-control" />
+    <br />
+    <label>Araç Durum</label>
+    <select asp-items="ViewBag.cs" asp-for="CarStatusID" class="form-control"></select>
+    <br />
+    <label>Vites Tipi</label>
+    <input type="text" asp-for="GearType" class="form-control" />
+    <br />
+    <label>Araç Resim</label>
+    <input type="text" asp-for="ImageUrl" class="form-control" />
+    <br />
+    <label>Araç Km</label>
+    <input type="text" asp-for="Km" class="form-control" />
+    <br />
+    <label>Araç Yıl</label>
+    <input type="text" asp-for="Year" class="form-control" />
+    <br />
+    <label>Araç Durum</label>
+    <input type="text" asp-for="Status" class="form-control" />
+    <br />
+    <label>Araç Kişi Sayısı</label>
+    <input type="text" asp-for="PersonCount" class="form-control" />
+    <br />
+    <button class="btn btn-primary">Araçı Güncelle</button>
+</form>

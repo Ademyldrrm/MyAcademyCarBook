@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HokLsi3MYc1VWQrAB+fOGRkc//iiZKz+YLouHIhZivP8AfroyxXV3s0aG6AVZMSIUD0pi4NARDukKCquNAfLMA==",
+  "dgSpecHash": "kORQ8BWuITYIPTYtCVBQJuMyR3dKNikeIksKIzx+QhVq4/02bgs/JIhB+XcFdAGAZTd5dCbCGGPl+E7GhtkWEg==",
   "success": true,
   "projectFilePath": "C:\\Users\\AdemYildirim\\source\\repos\\MyAcademyCarBook\\MyAcademyCarBook.PresentationLayer\\MyAcademyCarBook.PresentationLayer.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core.zh-cn\\2.14.1\\humanizer.core.zh-cn.2.14.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core.zh-hans\\2.14.1\\humanizer.core.zh-hans.2.14.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core.zh-hant\\2.14.1\\humanizer.core.zh-hant.2.14.1.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
@@ -246,7 +247,9 @@
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\AdemYildirim\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\x.pagedlist\\9.0.0-prerelease\\x.pagedlist.9.0.0-prerelease.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\x.pagedlist.mvc.core\\9.0.0-prerelease\\x.pagedlist.mvc.core.9.0.0-prerelease.nupkg.sha512"
   ],
   "logs": []
 }

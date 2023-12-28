@@ -12,5 +12,6 @@ namespace MyAcademyCarBook.BusinessLayer.Abstract
     {
         List<Car> TGetAllCarsWithBrands();
         List<Car> TGetAllLast5Cars();
+        List<Car> TGetAllPricebranCarCategory();
     }
 }

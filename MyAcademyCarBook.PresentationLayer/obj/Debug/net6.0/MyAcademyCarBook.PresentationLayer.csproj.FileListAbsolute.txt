@@ -263,3 +263,6 @@ C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.Presentatio
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\obj\Debug\net6.0\MyAcademyCarBook.PresentationLayer.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\bin\Debug\net6.0\JetBrains.Annotations.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\bin\Debug\net6.0\X.PagedList.dll
+C:\Users\AdemYildirim\source\repos\MyAcademyCarBook\MyAcademyCarBook.PresentationLayer\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll

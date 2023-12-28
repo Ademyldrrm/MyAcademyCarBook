@@ -11,6 +11,7 @@ namespace MyAcademyCarBook.DataAccessLayer.Abstract
     {
         List<Car> GetAllCarsWithBrands();
         List<Car> GetAllLast5Cars();
-        
+        List<Car> GetAllPricebranCarCategory();
+
     }
 }

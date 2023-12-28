@@ -1,8 +1,12 @@
-﻿@model List<Car>
+﻿@model IPagedList<Car>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+
 @{
     ViewData["Title"] = "CarList";
     Layout = "~/Views/UILayout/Index.cshtml";
-    
+   
+
 }
 
 <div class="site-section bg-light">
@@ -16,14 +20,16 @@
                         <div class="item-1-contents">
                             <div class="text-center">
                                 <h3><a href="#">@item.Brand.BrandName @item.Model</a></h3>
-                                <div class="rating">
-                                    <span class="icon-star text-warning"></span>
-                                    <span class="icon-star text-warning"></span>
-                                    <span class="icon-star text-warning"></span>
-                                    <span class="icon-star text-warning"></span>
-                                    <span class="icon-star text-warning"></span>
+                               
+                                <div class="rent-price">
+                                    
+                                    @foreach (var price in item.Prices)
+                                    {
+                                        <span>@price.PriceType:</span>
+                                        <span class="spec">@price.PriceValue₺ </span>
+                                    }
+                                   
                                 </div>
-                                <div class="rent-price"><span>1200/</span>Günlük</div>
                             </div>
                             <ul class="specs">
                                 <li>
@@ -31,17 +37,18 @@
                                     <span class="spec">@item.Year</span>
                                 </li>
                                 <li>
-                                    <span>Kişi Sayısı</span>
-                                    <span class="spec">@item.PersonCount</span>
-                                </li>
-                                <li>
-                                    <span>Vites Türü</span>
+                                    <span>Vites Tipi</span>
                                     <span class="spec">@item.GearType</span>
                                 </li>
                                 <li>
                                     <span>Km</span>
                                     <span class="spec">@item.Km</span>
                                 </li>
+                                <li>
+                                    <span>Kişi Sayısı</span>
+                                    <span class="spec">@item.PersonCount</span>
+                                </li>
+                                
                             </ul>
                             <div class="d-flex action">
                                 <a href="contact.html" class="btn btn-primary">Hemen Kirala</a>
@@ -51,18 +58,46 @@
                     </div>
                 </div>
             }
-
-
-
-
-            <div class="col-12">
-                <span class="p-3">1</span>
-                <a href="#" class="p-3">2</a>
-                <a href="#" class="p-3">3</a>
-                <a href="#" class="p-3">4</a>
-            </div>
         </div>
     </div>
 </div>
+
+
+
+<div class="text-center">
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            @if (Model.PageCount > 1)
+            {
+                <li class="page-item @(Model.PageNumber == 1 ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("CarList", new { page = Model.PageNumber - 1 })" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+
+                @for (var i = 1; i <= Model.PageCount; i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("CarList", new { page = i })">@i</a>
+                    </li>
+                }
+
+                <li class="page-item @(Model.PageNumber == Model.PageCount ? "disabled" : "")">
+                    <a class="page-link" href="@Url.Action("CarList", new { page = Model.PageNumber + 1 })" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>
+
+
+
+
+         <div>
+  </div>
+    
+
 
 
