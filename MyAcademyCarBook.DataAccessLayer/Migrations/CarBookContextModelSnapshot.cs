@@ -481,6 +481,31 @@ namespace MyAcademyCarBook.DataAccessLayer.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.ContactInformation", b =>
+                {
+                    b.Property<int>("ContactInformationID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ContactInformationID"), 1L, 1);
+
+                    b.Property<string>("Adress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ContactInformationID");
+
+                    b.ToTable("ContactInformations");
+                });
+
             modelBuilder.Entity("MyAcademyCarBook.EntityLayer.Concrete.HowitWorkStep", b =>
                 {
                     b.Property<int>("HowitWorkStepID")

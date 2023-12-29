@@ -10,5 +10,6 @@ namespace MyAcademyCarBook.DataAccessLayer.Abstract
     public interface ICommentDal:IGenericDal<Comment>
     {
         List<Comment> GetCommentsByCarID(int id);
+        List<Comment> GetCommentsByCarID2();
     }
 }

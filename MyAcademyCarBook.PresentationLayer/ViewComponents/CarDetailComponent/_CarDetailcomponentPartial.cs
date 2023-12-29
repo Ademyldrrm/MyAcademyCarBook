@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyAcademyCarBook.BusinessLayer.Abstract;
+using MyAcademyCarBook.DataAccessLayer.Concrete;
+using MyAcademyCarBook.PresentationLayer.Models;
+using Newtonsoft.Json.Linq;
 
 namespace MyAcademyCarBook.PresentationLayer.ViewComponents.CarDetailComponent
 {
@@ -12,11 +15,20 @@ namespace MyAcademyCarBook.PresentationLayer.ViewComponents.CarDetailComponent
         {
             _carCategoryService = carCategoryService;
         }
-
+        
         public IViewComponentResult Invoke()
         {
-           var values= _carCategoryService.TGetListAll();
-            return View(values);
+            var context = new CarBookContext();
+            
+           var values = _carCategoryService.TGetListAll();
+
+            var categories = (from category in values
+                              select new CategoryViewModel
+                              {
+                                  CategoryName = category.CategoryName,
+                                  CategoryCount = context.Cars.Count(car => car.CarCategoryID == category.CarCategoryID),
+                              }).ToList();
+            return View(categories);
         }
     }
 }

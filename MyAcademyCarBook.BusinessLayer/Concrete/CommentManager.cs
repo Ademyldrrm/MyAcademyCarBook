@@ -33,6 +33,11 @@ namespace MyAcademyCarBook.BusinessLayer.Concrete
             return _commentDal.GetCommentsByCarID(id);
         }
 
+        public List<Comment> TGetCommentsByCarID2()
+        {
+            return _commentDal.GetCommentsByCarID2();
+        }
+
         public List<Comment> TGetListAll()
         {
             return _commentDal.GetListAll();

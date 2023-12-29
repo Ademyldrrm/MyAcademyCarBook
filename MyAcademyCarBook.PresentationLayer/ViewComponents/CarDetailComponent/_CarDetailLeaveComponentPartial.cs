@@ -14,7 +14,8 @@ namespace MyAcademyCarBook.PresentationLayer.ViewComponents.CarDetailComponent
 
         public IViewComponentResult Invoke(int id)
         {
-           
+            ViewBag.Id = id;
+
             return View();
         }
     }

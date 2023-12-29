@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using MyAcademyCarBook.BusinessLayer.Abstract;
 using MyAcademyCarBook.BusinessLayer.Concrete;
@@ -50,6 +51,12 @@ builder.Services.AddScoped<ITeamService, ITeamManager>();
 
 builder.Services.AddScoped<IAboutDal, EfAboutDal>();
 builder.Services.AddScoped<IAboutService, IAboutManager>();
+
+builder.Services.AddScoped<IStaticticDal, EfStatisticDal>();
+builder.Services.AddScoped<IStatisticService, StatisticManager>();
+
+builder.Services.AddScoped<IContactInformation, EfContactInformation>();
+builder.Services.AddScoped<IContactInformationService, ContactInformationManager>();
 
 builder.Services.AddControllersWithViews();
 

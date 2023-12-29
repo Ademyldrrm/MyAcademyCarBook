@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmRcVXBkYXRlQnJhbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/AdemYildirim/source/repos/MyAcademyCarBook/MyAcademyCarBook.PresentationLayer/Views/CarCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/AdemYildirim/source/repos/MyAcademyCarBook/MyAcademyCarBook.PresentationLayer/Views/CarStatus/CreateCarStatus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FyU3RhdHVzXENyZWF0ZUNhclN0YXR1cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -116,6 +120,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/AdemYildirim/source/repos/MyAcademyCarBook/MyAcademyCarBook.PresentationLayer/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/AdemYildirim/source/repos/MyAcademyCarBook/MyAcademyCarBook.PresentationLayer/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/AdemYildirim/source/repos/MyAcademyCarBook/MyAcademyCarBook.PresentationLayer/Views/HomePage/Index.cshtml]

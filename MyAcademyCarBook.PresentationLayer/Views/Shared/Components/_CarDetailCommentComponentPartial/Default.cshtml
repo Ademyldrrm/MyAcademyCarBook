@@ -6,16 +6,15 @@
     @foreach (var item in Model)
     {
         <li class="comment">
-            <div class="vcard bio">
-                <img src="~/carrent-master/images/person_2.jpg" alt="Free Website Template by Free-Template.co">
+            <div class="comment-container">
+                <div class="user-initials background-green me-4" style="color:burlywood">@item.UserName.Substring(0, 1)</div>
+                <p class="me-3"><span style="margin-right:15px">@item.UserSurname</span> <span style="font-size:small">@item.CreatedDate.ToLongDateString()</span></p>
             </div>
-            <div class="comment-body">
-                <h3>@item.UserName</h3>
-                <div class="meta">@item.CreatedDate.ToShortDateString()</div>
+
+            <div style="margin-left: 65px;">
                 <p>@item.Description</p>
-               
             </div>
         </li>
     }
-   
 </ul>
+

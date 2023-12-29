@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyAcademyCarBook.DataAccessLayer.Abstract
+{
+    public interface IStaticticDal
+    {
+        int CarCount();
+        decimal AverageCarPrice();
+        string LastCarBrandName();
+        string MaxPriceCar();
+        int BrandCount();
+        int CarCategoryCount();
+        string MaxCategoryBrand();
+        int TestimonialCount();
+    }
+}
