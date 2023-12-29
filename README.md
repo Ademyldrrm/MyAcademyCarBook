@@ -1,3 +1,5 @@
+
+
 # Renta Car Projesi
 
 Bu proje, araç kiralama işlemlerini yönetmek amacıyla geliştirilmiştir. .NET 6 kullanılarak oluşturulmuş ve SQL Server veritabanını içermektedir.
