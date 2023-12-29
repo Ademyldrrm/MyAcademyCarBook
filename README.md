@@ -24,7 +24,7 @@ Projede, n katmanlı mimari kullanılmıştır. Her katmanın belirli bir soruml
 
 ## Özel Metotlar
 
-Entity katmanında özel metotlar eklenmiştir. Bu metotlar, projenin spesifik ihtiyaçlarına yönelik işlemleri gerçekleştirir.
+DataAccess katmanında özel metotlar eklenmiştir. Bu metotlar, projenin spesifik ihtiyaçlarına yönelik işlemleri gerçekleştirir.
 
 ## Özellikler
 
